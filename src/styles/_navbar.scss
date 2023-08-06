@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-img {
+      width: 75px;
+      height: 75px;
+    }
+
+    &-text {
+      color: $color-white;
+      font-family: $font-family-montserrat;
+      font-size: 45px;
+      letter-spacing: 2px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      
+      cursor: pointer;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 $m-5;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    text-decoration: none;
+    color: $color-white;
+    font-family: $font-family-montserrat;
+    text-align: center;
+
+    font-size: 15px;
+    letter-spacing: -0.225px;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+}

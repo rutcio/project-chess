@@ -1,0 +1,50 @@
+.btns {
+  @include transition();
+  
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  margin: $m-2;
+
+  text-decoration: none;
+  border-radius: 6px;
+
+  font-family: $font-family-montserrat;
+  font-size: 15px;
+  letter-spacing: -0.225px;
+
+  text-align: center;
+
+  &__info {
+    background-color: $color-white;
+    color: $color-secondary;
+
+    border: 1px solid $color-black;
+
+    &:hover {
+      transform: translateY(-3px);
+      text-decoration: none;
+
+      // background-color: $color-secondary;
+      // color: $color-white;
+      border: none;
+  
+      cursor: pointer;
+    }
+  }
+
+  &__link {
+    background-color: $color-secondary;
+    color: $color-white;
+
+    &:hover {
+      transform: translateY(-3px);
+      text-decoration: none;
+
+      // background-color: $color-white;
+      // color: $color-secondary;
+  
+      cursor: pointer;
+    }
+  }
+}
