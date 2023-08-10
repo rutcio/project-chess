@@ -112,6 +112,21 @@ input {
   margin: 0 auto;
 }
 
+.white {
+  color: #FFF !important;
+}
+
+.secondary {
+  color: #D79D6B !important;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .btns {
   transition: all 0.3s;
   display: inline-block;
@@ -146,6 +161,41 @@ input {
   cursor: pointer;
 }
 
+.title {
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.title-main {
+  padding: 2rem 0;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -0.72px;
+}
+.title-sub {
+  padding: 1.5rem 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.36px;
+}
+.title-description {
+  padding: 1rem 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.21px;
+}
+.title-header {
+  padding: 15rem 0;
+  color: #FFF;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: -1.44px;
+}
+
 .header {
   width: 100%;
   padding: 0 4rem;
@@ -156,7 +206,7 @@ input {
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .section-1 {
   display: flex;
@@ -174,40 +224,62 @@ input {
 .section-3 {
   background-color: #1C2520;
 }
+.section-4 {
+  background-color: #FFF;
+}
+.section-5 {
+  background-color: #F4D2B4;
+}
+.section__lists {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__lists-item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.title {
-  color: #000000;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 5rem 0;
+  background-color: #1C2520;
 }
-.title-main {
-  padding: 3rem 0;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 72px;
-  letter-spacing: -0.72px;
+
+.line {
+  width: 80%;
+  height: 3px;
+  border-radius: 1.5px;
+  margin: 1rem 0;
+  background-color: #F4D2B4;
 }
-.title-sub {
-  padding: 4rem 0;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: -0.36px;
+
+.lists {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.title-description {
-  padding: 1.5rem 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: -0.21px;
+.lists__item {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.title-header {
-  padding: 15rem 0;
-  color: #FFF;
-  font-size: 96px;
-  font-weight: 400;
-  line-height: 80px;
-  letter-spacing: -1.44px;
+.lists__item-image {
+  width: 211px;
+  height: 333px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .navbar {

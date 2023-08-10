@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: $m-2;
+    padding: $p-5 0;
+
+    background-color: $color-green;
+}
+
+.line {
+    width: 80%;
+    height: 3px;
+
+    border-radius: 1.5px;
+
+    margin: $m-1 0;
+
+    background-color: $color-primary;
+}

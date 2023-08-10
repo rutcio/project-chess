@@ -1,5 +1,5 @@
 .section {
-  padding: $p-3 0;
+  padding: $p-2 0;
 
   &-1 {
     display: flex;
@@ -21,49 +21,30 @@
   &-3 {
     background-color: $color-green;
   }
-}
 
-.title {
-  color: $color-black;
-  text-align: center;
-
-  font-family: $font-family-montserrat;
-
-  &-main {
-    padding: $p-3 0;
-
-    font-size: $font-48;
-    font-weight: $font-w-400;
-    line-height: 72px;
-    letter-spacing: -0.72px;
+  &-4 {
+    background-color: $color-white;
   }
 
-  &-sub {
-    padding: $p-4 0;
-
-    font-size: $font-24;
-    font-weight: $font-w-700;
-    line-height: 36px;
-    letter-spacing: -0.36px;
+  &-5 {
+    background-color: $color-primary;
   }
 
-  &-description {
-    padding: $p-1-5 0;
+  &__lists {
+    padding: $p-2;
 
-    font-size: $font-14;
-    font-weight: $font-w-400;
-    line-height: 26px;
-    letter-spacing: -0.21px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  &-header {
-    padding: $p-15 0;
+    &-item {
+      padding: $p-1;
 
-    color: $color-white;
+      display: flex;
+      flex-direction: column;
 
-    font-size: $font-96;
-    font-weight: $font-w-400;
-    line-height: 80px;
-    letter-spacing: -1.44px;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

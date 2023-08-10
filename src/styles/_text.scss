@@ -1,0 +1,44 @@
+.title {
+  color: $color-black;
+  text-align: center;
+
+  font-family: $font-family-montserrat;
+
+  &-main {
+    padding: $p-2 0;
+
+    font-size: $font-48;
+    font-weight: $font-w-400;
+    line-height: 72px;
+    letter-spacing: -0.72px;
+  }
+
+  &-sub {
+    padding: $p-1-5 0;
+
+    font-size: $font-24;
+    font-weight: $font-w-700;
+    line-height: 36px;
+    letter-spacing: -0.36px;
+  }
+
+  &-description {
+    padding: $p-1 0;
+
+    font-size: $font-14;
+    font-weight: $font-w-400;
+    line-height: 26px;
+    letter-spacing: -0.21px;
+  }
+
+  &-header {
+    padding: $p-15 0;
+
+    color: $color-white;
+
+    font-size: $font-96;
+    font-weight: $font-w-400;
+    line-height: 80px;
+    letter-spacing: -1.44px;
+  }
+}
