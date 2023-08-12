@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
 
+  flex-wrap: wrap;
+
   &__item {
     padding: 0.5rem;
     display: flex;
@@ -15,6 +17,11 @@
       width: 211px;
       height: 333px;
       object-fit: cover;
+
+      &:hover {
+        @include transition();
+        transform: scale(1.1);
+      }
     }
   }
 }

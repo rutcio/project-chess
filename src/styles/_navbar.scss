@@ -2,13 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 50px;
 
   &__logo {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    &:hover {
+      .navbar__logo-img {
+        transform: rotate(-5deg) translateX(-10px);
+      }
+    }
+
     &-img {
+      @include transition();
       width: 75px;
       height: 75px;
     }
@@ -16,7 +24,7 @@
     &-text {
       color: $color-white;
       font-family: $font-family-montserrat;
-      font-size: 45px;
+      font-size: $font-45;
       letter-spacing: 2px;
     }
 
@@ -31,14 +39,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    gap: 100px;
   }
 
   &__item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    margin: 0 $m-5;
+    // margin: 0 $m-5;
   }
 
   &__link {
@@ -53,7 +63,7 @@
     font-family: $font-family-montserrat;
     text-align: center;
 
-    font-size: 15px;
+    font-size: $font-15;
     letter-spacing: -0.225px;
 
     &:hover {

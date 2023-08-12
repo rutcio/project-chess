@@ -6,6 +6,10 @@ $color-green: #1C2520;
 $color-gray: #37383A;
 $color-black: #000000;
 
+[dark] {
+  $color-white: #000;
+  $color-black: #fff;
+}
 
 // FONT-SIZE
 $font-8: 8px;
@@ -13,6 +17,7 @@ $font-10: 10px;
 $font-12: 12px;
 $font-13: 13px;
 $font-14: 14px;
+$font-15: 15px;
 $font-16: 16px;
 $font-18: 18px;
 $font-20: 20px;
@@ -20,6 +25,7 @@ $font-24: 24px;
 $font-28: 28px;
 $font-32: 32px;
 $font-36: 36px;
+$font-45: 45px;
 $font-48: 48px;
 $font-80: 80px;
 $font-96: 96px;

@@ -15,3 +15,17 @@
   height: 100%;
   object-fit: cover;
 }
+
+.svg {
+  @include transition();
+
+  &:hover {
+    transform: translateY(-5px);
+
+    cursor: pointer;
+  }
+}
+
+#player {
+  flex-wrap: nowrap;
+}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rhythm Chess &vert; Home</title>
+  <title>&#9819; Rhythm Chess &vert; Home</title>
 
   <!-- favicon -->
   <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
@@ -14,23 +14,28 @@
 </head>
 
 <body>
-  <!-- <div class="btns">Hello</div>
-  <div class="btns btns__info">Hello</div>
-  <div class="btns btns__link">Hello</div> -->
-
   <header class="header">
     <nav class="navbar">
       <div class="navbar__logo">
-        <img src="./img/icons/logo.svg" alt="logo" class="navbar__logo-img">
-        <div class="navbar__logo-text">Rhythm</div>
+        <a href="index.html" class="navbar__link">
+          <img src="./img/icons/logo.svg" alt="logo" class="navbar__logo-img">
+          <div class="navbar__logo-text">Rhythm</div>
+        </a>
       </div>
       <ul class="navbar__list">
         <li class="navbar__item"><a href="index.html" class="navbar__link">Home</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Play</a></li>
+        <li class="navbar__item"><a href="./pages/play.html" class="navbar__link">Play</a></li>
         <li class="navbar__item"><a href="#" class="navbar__link">Contact us</a></li>
       </ul>
     </nav>
-    <div class="btns btns__link"> <a href="#" class="navbar__link">Subscribe</a></div>
+    <div class="header__buttons">
+      <div class="btns btns__link" id="header-subs"> <a href="#" class="navbar__link">Subscribe</a></div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
   </header>
 
   <main class="main">
@@ -76,11 +81,11 @@
     </section>
 
     <section class="container section section-3">
-      <div class="section__lists">
-        <div class="section__lists-item">
+      <div class="lists" id="player">
+        <div class="lists__item">
           <img src="./img/player.jpg" alt="player" class="image">
         </div>
-        <div class="section__lists-item">
+        <div class="lists__item">
           <h4 class="title title-sub white">Want to try your hand at Chess?</h4>
           <p class="title title-description white">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
             aut
@@ -116,15 +121,15 @@
 
     <section class="container section section-5">
       <h1 class="title title-main">Would you like to learn more about chess?</h1>
-      <div class="section__lists">
-        <div class="section__lists-item">
+      <div class="lists">
+        <div class="lists__item">
           <p class="title title-sub">Subscribe to our Newsletter or contact us for a <br>
             one-on-one session with our in-house grandmaster!</p>
         </div>
-        <div class="section__lists-item">
+        <div class="lists__item">
           <div class="btns btns__link"> <a href="#" class="navbar__link">Subscribe</a></div>
         </div>
-        <div class="section__lists-item">
+        <div class="lists__item">
           <div class="btns btns__info"> <a href="#" class="navbar__link secondary">Contact us</a></div>
         </div>
       </div>
@@ -156,6 +161,7 @@
     </div>
   </footer>
 
+  <script src="./js/hamburger.js"></script>
 </body>
 
 </html>
