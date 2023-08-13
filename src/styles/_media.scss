@@ -1,5 +1,3 @@
-@media screen and (max-width : 1024px) {
-}
 @media screen and (max-width : 900px) {
   #header-subs {
     display: none;
@@ -40,6 +38,8 @@
 
       padding: 0 $m-1;
       
+      gap: 0;
+      
       &.active {
         opacity: 1;
         visibility: visible;
@@ -76,13 +76,14 @@
   }
 }
 @media screen and (max-width : 420px) {
-
   .header .navbar {
     &__list {
       top: 104px;
       width: 100%;
 
       padding: $p-0-5 $p-2;
+
+      gap: 0;
     }
   }
   

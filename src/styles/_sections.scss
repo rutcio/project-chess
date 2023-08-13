@@ -52,7 +52,38 @@
     }
   }
 
+  &__block {
+    padding: $p-2;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    &-description {
+      padding: $p-1;
+
+      width: 50%;
+      height: 500px;
+
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   &-info {
+    width: 100%;
+    padding: $p-5;
     background-image: url(../../img/background-info.jpg);
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &.show {
+      opacity: 1;
+    }
   }
 }

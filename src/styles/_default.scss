@@ -29,3 +29,17 @@
 #player {
   flex-wrap: nowrap;
 }
+
+#info {
+  flex-wrap: nowrap;
+}
+
+#infoContainer {
+  padding-bottom: $p-5;
+  width: 1440px;
+}
+
+.figureIMG {
+  width: 300px;
+  object-fit: cover;
+}
