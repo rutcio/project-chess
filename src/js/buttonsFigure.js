@@ -33,8 +33,6 @@ const figuresData = {
         description: "A king moves one square in any direction."
     }
 };
-
-// Показать информацию о пешке по умолчанию при загрузке страницы
 showFigureInfo('pawn');
 
 figureBtns.forEach(button => {
@@ -50,8 +48,6 @@ function showFigureInfo(figure) {
     if (figureData) {
         const infoSection = document.createElement('section');
         infoSection.classList.add('container', 'section', 'section-info');
-
-        // Добавляем класс "show", чтобы активировать плавное появление
         infoSection.classList.add('show');
 
         infoSection.innerHTML = `
@@ -60,21 +56,18 @@ function showFigureInfo(figure) {
                     <img src="${figureData.image}" alt="Изображение фигуры" class="figureIMG">
                 </div>
                 <div class="section__block-description">
-                    <h2 class="title title-sub white">${figureData.title}</h2>
+                    <h2 class="title title-main white">${figureData.title}</h2>
                     <p class="title title-description white half">${figureData.description}</p>
                 </div>
             </div>
         `;
-
-        // Убираем предыдущую информацию плавно, если она была
         const existingInfoSection = infoContainer.querySelector('.section-info');
         if (existingInfoSection) {
             existingInfoSection.classList.remove('show');
             setTimeout(() => {
                 infoContainer.removeChild(existingInfoSection);
-            }, 300); // Длительность перехода 0.3 секунды (подстроить под CSS)
+            }, 300);
         }
-
         infoContainer.appendChild(infoSection);
     }
 }

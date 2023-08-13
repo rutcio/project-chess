@@ -549,6 +549,9 @@ input:checked + .slider:before {
   #header-subs {
     display: none;
   }
+  #infoContainer {
+    width: 900px;
+  }
   .hamburger {
     display: block;
   }
@@ -605,6 +608,19 @@ input:checked + .slider:before {
   }
 }
 @media screen and (max-width: 420px) {
+  #infoContainer {
+    width: 420px;
+  }
+  .btns {
+    margin: 1rem;
+  }
+  .section-info {
+    padding: 2rem;
+  }
+  .section__block {
+    flex-direction: column;
+    padding: 0;
+  }
   .header .navbar__list {
     top: 104px;
     width: 100%;
@@ -630,6 +646,7 @@ input:checked + .slider:before {
     font-size: 1rem;
   }
   .title-description {
+    padding: 0;
     font-size: 0.75rem;
   }
   .image {

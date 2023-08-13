@@ -3,6 +3,10 @@
     display: none;
   }
 
+  #infoContainer {
+    width: 900px;
+  }
+
   .hamburger {
     display: block;
     &.active .bar:nth-child(2) {
@@ -76,6 +80,24 @@
   }
 }
 @media screen and (max-width : 420px) {
+  #infoContainer {
+    width: 420px;
+  }
+
+  .btns {
+    margin: $m-1;
+  }
+
+  .section {
+    &-info {
+      padding: $p-2;
+    }
+
+    &__block {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
   .header .navbar {
     &__list {
       top: 104px;
@@ -115,6 +137,7 @@
     }
 
     &-description {
+      padding: 0;
       font-size: 0.75rem;
     }
   }
