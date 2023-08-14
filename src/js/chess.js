@@ -34,18 +34,9 @@ function coloring() {
       if (a % 2 !== 0) {
           color.style.backgroundColor = 'rgb(100, 75, 43)'
       }
-      // if (a % 2 == 0) {
-      //     color.style.backgroundColor = 'seagreen'
-      // }
-      // if (a % 2 !== 0) {
-      //     color.style.backgroundColor = 'lime'
-      // }
-
   })
 }
 coloring()
-
-//function to not remove the same team element
 
 function reddish() {
   document.querySelectorAll('.box').forEach(i1 => {
@@ -87,8 +78,6 @@ whiteCastleChance=true
 blackCastleChance=true
 
 document.querySelectorAll('.box').forEach(item => {
-
-
 
   item.addEventListener('click', function () {
 
@@ -518,7 +507,6 @@ document.querySelectorAll('.box').forEach(item => {
 
       if (numOfKings == 1) {
           setTimeout(() => {
-              // console.log(`${toggle}`) 
               if (tog % 2 == 0) {
                   alert('White Wins !!')
                   location.reload()
@@ -535,10 +523,6 @@ document.querySelectorAll('.box').forEach(item => {
   })
 
 })
-
-
-
-
 
 // Moving the element
 document.querySelectorAll('.box').forEach(item => {
@@ -650,10 +634,6 @@ document.querySelectorAll('.box').forEach(item => {
   })
 
 })
-
-
-
-
 
 
 // Prvents from selecting multiple elements

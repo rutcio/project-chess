@@ -34,6 +34,19 @@
     background-color: $color-primary;
   }
 
+  &__form {
+    margin: $m-2 0;
+    padding: $p-2;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-green;
+  }
+
   &__lists {
     padding: $p-2;
 

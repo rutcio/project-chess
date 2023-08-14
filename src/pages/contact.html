@@ -40,56 +40,29 @@
   </header>
 
   <main class="main">
-    <section class="container section">
-      <h1 class="title title-main">Let’s Get Started</h1>
-      <p class="title title-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore</p>
+    <section class="container section section__form">
+      <h1 class="title title-main white">Ready to learn more?</h1>
+      <h4 class="title title-sub white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore</h4>
 
-      <ul class="lists">
-        <li class="lists__item">
-          <div class="btns btns__info">
-            <div class="navbar__link secondary figureBtn" data-figure="pawn">The Pawn &#9823;</div>
-          </div>
-        </li>
-        <li class="lists__item">
-          <div class="btns btns__info">
-            <div class="navbar__link secondary figureBtn" data-figure="bishop">The Bishop &#9821;</div>
-          </div>
-        </li>
-        <li class="lists__item">
-          <div class="btns btns__info">
-            <div class="navbar__link secondary figureBtn" data-figure="knight">The Knight &#9822;</div>
-          </div>
-        </li>
-        <li class="lists__item">
-          <div class="btns btns__info">
-            <div class="navbar__link secondary figureBtn" data-figure="rook">The Rook &#9820;</div>
-          </div>
-        </li>
-        <li class="lists__item">
-          <div class="btns btns__info">
-            <div class="navbar__link secondary figureBtn" data-figure="queen">The Queen &#9819;</div>
-          </div>
-        </li>
-        <li class="lists__item">
-          <div class="btns btns__info">
-            <div class="navbar__link secondary figureBtn" data-figure="king">The King &#9818;</div>
-          </div>
-        </li>
-      </ul>
+      <form action="#" class="form" method="post" id="form">
+        <div class="form__group">
+          <input type="text" class="form__input" id="firstName" placeholder="First name" required>
+        </div>
+        <div class="form__group">
+          <input type="text" class="form__input" id="lastName" placeholder="Last name" required>
+        </div>
+        <div class="form__group">
+          <input type="email" class="form__input" id="email" placeholder="Email address" required>
+        </div>
+        <button class="btns btns__info" type="submit" form="form" value="Submit">Subscribe</button>
+      </form>
     </section>
 
-    <div id="infoContainer"></div>
-
     <section class="container section section-5">
-      <h1 class="title title-main">Would you like to learn more about chess?</h1>
       <div class="lists">
         <div class="lists__item">
-          <p class="title title-sub">Subscribe to our Newsletter or contact us for a <br>
-            one-on-one session with our in-house grandmaster!</p>
-        </div>
-        <div class="lists__item">
-          <div class="btns btns__link"> <a href="#" class="navbar__link">Subscribe</a></div>
+          <p class="title title-sub">OR contact us for a one-on-one!</p>
         </div>
         <div class="lists__item">
           <div class="btns btns__info"> <a href="#" class="navbar__link secondary">Contact us</a></div>
@@ -125,7 +98,6 @@
     </div>
   </footer>
 
-  <script src="../js/buttonsFigure.js"></script>
   <script src="../js/hamburger.js"></script>
 </body>
 

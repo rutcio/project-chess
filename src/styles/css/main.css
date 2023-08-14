@@ -223,6 +223,63 @@ input {
   letter-spacing: -1.44px;
 }
 
+.form {
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #D79D6B;
+}
+.form__group {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form__input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #D79D6B;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+.form__input::-moz-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.form__input::placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.form__input:focus::placeholder {
+  opacity: 0;
+}
+.form__input:focus-visible {
+  outline: 1px solid #FFF;
+}
+.form__label {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff00;
+}
+
 .header {
   width: 100%;
   padding: 0 1.5rem;
@@ -262,6 +319,15 @@ input {
 }
 .section-5 {
   background-color: #F4D2B4;
+}
+.section__form {
+  margin: 2rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1C2520;
 }
 .section__lists {
   padding: 2rem;
