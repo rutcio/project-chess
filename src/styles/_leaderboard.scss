@@ -1,0 +1,44 @@
+.table {
+    width: 100%;
+    
+    border: 1px solid $color-leaderboard-border;
+    margin: 0 auto;
+
+    background-color: $color-white;
+    color: $color-black;
+    font-family: $font-family-montserrat;
+    font-size: $font-16;
+    font-weight: $font-w-300;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    &__head {
+        background-color: $color-leaderboard-head;
+        color: $color-black;
+        font-weight: $font-w-600;
+    }
+
+    &__row {
+      border-bottom: 1px solid $color-leaderboard-border;
+      color: $color-black;
+      font-weight: $font-w-300;
+
+      &:hover:not(#tableSample) {
+          @include transition();
+
+          background-color: $color-secondary;
+          color: $color-white;
+
+          cursor: pointer;
+
+          .table__item {
+            transform: translateY(-3px) scale(1.03);
+          }
+      }
+    }
+
+    &__item {
+      padding: 12px 15px;
+      text-align: center;
+    }
+}

@@ -87,6 +87,12 @@
     }
   }
 
+  &__leaderboard {
+    margin: $m-2 0;
+    padding: $p-2;
+    background-color: $color-primary;
+  }
+
   &-info {
     width: 100%;
     padding: $p-5;
@@ -94,6 +100,13 @@
 
     opacity: 0;
     transition: opacity 0.3s ease;
+
+    &:hover {
+      .figureIMG {
+        @include transition();
+        transform: scale(1.1) rotate(5deg) translateX(5px) translateY(5px);
+      }
+    }
 
     &.show {
       opacity: 1;

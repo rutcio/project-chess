@@ -5,11 +5,8 @@ $color-white: #FFF;
 $color-green: #1C2520;
 $color-gray: #37383A;
 $color-black: #000000;
-
-[dark] {
-  $color-white: #000;
-  $color-black: #fff;
-}
+$color-leaderboard-border: #ddd; 
+$color-leaderboard-head: #f5f5f5;
 
 // FONT-SIZE
 $font-8: 8px;

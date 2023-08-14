@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> &#9819; Rhythm Chess &vert; Contact us</title>
+  <title> &#9819; Rhythm Chess &vert; Leaderboard</title>
 
   <!-- favicon -->
   <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
@@ -41,35 +41,22 @@
   </header>
 
   <main class="main">
-    <section class="container section section__form">
-      <h1 class="title title-main white">Ready to learn more?</h1>
-      <h4 class="title title-text white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore</h4>
 
-      <form action="#" class="form" method="post" id="form">
-        <div class="form__group">
-          <input type="text" class="form__input" id="firstName" placeholder="First name" required>
-        </div>
-        <div class="form__group">
-          <input type="text" class="form__input" id="lastName" placeholder="Last name" required>
-        </div>
-        <div class="form__group">
-          <input type="email" class="form__input" id="email" placeholder="Email address" required>
-        </div>
-        <button class="btns btns__info" type="submit" form="form" value="Submit">Subscribe</button>
-      </form>
-    </section>
+    <h1 class="title title-main">Top 50 Leaderboard</h1>
 
-    <section class="container section section-5">
-      <div class="lists">
-        <div class="lists__item">
-          <p class="title title-text">Subscribe to our Newsletter or contact us for a <br>
-            one-on-one session with our in-house grandmaster!</p>
-        </div>
-        <div class="lists__item">
-          <div class="btns btns__info"> <a href="contact.html" class="navbar__link secondary">Contact us</a></div>
-        </div>
-      </div>
+    <section class="container section section__leaderboard">
+      <table class="table">
+        <thead class="table__head">
+          <tr class="table__row" id="tableSample">
+            <th class="table__item">Rank</th>
+            <th class="table__item">Username</th>
+            <th class="table__item">Score</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboardID">
+          <!-- Data will be inserted here dynamically -->
+        </tbody>
+      </table>
     </section>
   </main>
 
@@ -101,6 +88,7 @@
   </footer>
 
   <script src="../js/hamburger.js"></script>
+  <script src="../js/leaderboard.js"></script>
 </body>
 
 </html>

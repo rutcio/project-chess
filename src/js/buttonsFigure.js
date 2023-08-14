@@ -57,7 +57,7 @@ function showFigureInfo(figure) {
                 </div>
                 <div class="section__block-description">
                     <h2 class="title title-main white">${figureData.title}</h2>
-                    <p class="title title-description white half">${figureData.description}</p>
+                    <p class="title title-chess white half">${figureData.description}</p>
                 </div>
             </div>
         `;

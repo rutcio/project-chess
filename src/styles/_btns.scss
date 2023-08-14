@@ -22,7 +22,7 @@
     border: 1px solid $color-black;
 
     &:hover {
-      transform: translateY(-3px);
+      transform: translateY(-3px) scale(1.03);
       text-decoration: none;
 
       // background-color: $color-secondary;
@@ -38,7 +38,7 @@
     color: $color-white;
 
     &:hover {
-      transform: translateY(-3px);
+      transform: translateY(-3px) scale(1.03);
       text-decoration: none;
 
       // background-color: $color-white;
